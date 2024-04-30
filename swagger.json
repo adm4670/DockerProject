@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "DockerProject",
+    "description": "Projeto de Pós Graduação SENAC-PE",
+    "termsOfService": "",
+    "contact": {
+      "email": "marciohigo@pe.senac.br"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Ambiente de Produção"
+    }
+  ],
+  "paths": {
+    "/api/cinema/": {
+      "get": {
+        "summary": "Informações sobre Cinema.",
+        "description": "Informações sobre Cinema.",
+        "tags": ["Cinema"],
+        "responses": {
+          "401": {
+            "description": "Não Encontrado."
+          }
+        }
+      }
+    }
+  }
+}
